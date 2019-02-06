@@ -129,6 +129,10 @@ a {
   cursor: pointer;
 }
 
+#navbar .nav .nav-item a:hover {
+  border-bottom: 1px solid #fff;
+}
+
 #navbar .nav .nav-item > .active {
   border-bottom: 1px solid #fff;
 }
@@ -186,15 +190,16 @@ a {
 
 #footer .nav .nav-item {
   padding: 0 6rem;
+  margin: 0.2rem 0;
   border-right: #f4f4f4 dotted 1px;
-}
-
-#footer .nav .nav-item a {
-  cursor: pointer;
 }
 
 #footer .nav .nav-item:last-child {
   border: none;
+}
+
+#footer .nav .nav-item a {
+  cursor: pointer;
 }
 
 #main-footer .links {

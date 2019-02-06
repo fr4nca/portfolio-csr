@@ -7,10 +7,7 @@ export default function About() {
       <div className="about-content">
         <div className="container">
           <h1 className="l-heading">Victor Almeida França</h1>
-          <p className="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-            amet?
-          </p>
+          <p className="lead">Desenvolvedor Web, programador e entusiasta</p>
           <ul className="links">
             <li>
               <a

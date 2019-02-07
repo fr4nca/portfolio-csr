@@ -11,3 +11,4 @@ window.addEventListener("scroll", () => {
     document.querySelector("#navbar").style.background = "rgba(31, 31, 31, 0)";
   }
 });
+document.querySelector("#about").style.height = window.innerHeight + "px";

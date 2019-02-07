@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
 
+import "./About.css";
+
 export default function About() {
   return (
     <div id="about">

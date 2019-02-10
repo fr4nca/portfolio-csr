@@ -3,6 +3,7 @@
   background: url("../../assets/img/blake-connally-435076-unsplash.jpg")
     no-repeat center center/cover;
   color: #fff;
+  height: 100vh;
 }
 
 #about .about-content {

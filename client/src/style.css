@@ -102,8 +102,12 @@ a {
 }
 
 @media (max-width: 768px) {
-  .logo {
-    font-size: 1rem;
+  #navbar {
+    flex-direction: column;
+  }
+
+  #navbar .nav {
+    padding: 0.75rem 0;
   }
 
   .l-heading {

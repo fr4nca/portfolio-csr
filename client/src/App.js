@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import "./style.css";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
@@ -13,7 +13,6 @@ class App extends Component {
   };
 
   setNavHeight = h => {
-    console.log(h);
     this.setState({
       navHeight: h
     });
@@ -24,18 +23,16 @@ class App extends Component {
       <div>
         {/* Navbar */}
         <Navbar setNavHeight={this.setNavHeight} />
-        <Fragment>
-          {/* About */}
-          <About navHeight={this.state.navHeight} />
-          {/* Live Apps */}
-          <Live />
-          {/* Repos */}
-          <Repos />
-          {/* Contact */}
-          <Contact />
-          {/* Footer */}
-          <Footer />
-        </Fragment>
+        {/* About */}
+        <About navHeight={this.state.navHeight} />
+        {/* Live Apps */}
+        <Live />
+        {/* Repos */}
+        <Repos />
+        {/* Contact */}
+        <Contact />
+        {/* Footer */}
+        <Footer />
       </div>
     );
   }

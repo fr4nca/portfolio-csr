@@ -4,8 +4,8 @@ import "./About.css";
 export default class About extends Component {
   render() {
     return (
-      <div id="about" className="bg-darker">
-        <div className="container py-3">about</div>
+      <div id="about" className="bg-darker py-2">
+        <div className="container">about</div>
       </div>
     );
   }

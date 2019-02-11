@@ -18,7 +18,7 @@ export default function Footer() {
                 offset={-60}
                 duration={500}
               >
-                Home
+                Me
               </Link>
             </li>
             <li className="nav-item">
@@ -30,7 +30,7 @@ export default function Footer() {
                 offset={-60}
                 duration={500}
               >
-                Live Projects
+                Projects
               </Link>
             </li>
             <li className="nav-item">

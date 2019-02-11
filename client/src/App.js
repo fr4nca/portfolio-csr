@@ -39,7 +39,7 @@ class App extends Component {
           <Landing navHeight={this.state.navHeight} />
           {/* About */}
           <About />
-          {/* Live Apps */}
+          {/* <Projects /> */}
           <Projects />
           {/* Repos */}
           <Repos />

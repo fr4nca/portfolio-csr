@@ -26,7 +26,7 @@ export default class Navbar extends Component {
           <h1 className="logo">
             <Link
               activeClass="active"
-              to="about"
+              to="landing"
               spy={true}
               smooth={true}
               duration={750}
@@ -35,6 +35,18 @@ export default class Navbar extends Component {
             </Link>
           </h1>
           <ul className="nav">
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-this.state.navHeight}
+                duration={750}
+              >
+                Me
+              </Link>
+            </li>
             <li className="nav-item">
               <Link
                 activeClass="active"

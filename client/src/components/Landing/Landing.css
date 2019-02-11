@@ -1,0 +1,40 @@
+/* About */
+#landing {
+  background: url("../../assets/img/blake-connally-373084-unsplash.jpg")
+    no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+}
+
+#landing .landing-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#landing .landing-content .links {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#landing .landing-content .links li {
+  margin: 0 1rem;
+  list-style: none;
+}
+
+#landing .landing-content .arrow {
+  margin-bottom: 4rem;
+  cursor: pointer;
+}

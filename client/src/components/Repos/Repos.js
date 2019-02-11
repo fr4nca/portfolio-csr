@@ -41,9 +41,11 @@ export default class Repos extends Component {
 
           return (
             <div id="repos">
-              {edges.map(edge => (
-                <h1 key={edge.node.id}>{edge.node.id}</h1>
-              ))}
+              <div className="container">
+                {edges.map(edge => (
+                  <h1 key={edge.node.id}>{edge.node.name}</h1>
+                ))}
+              </div>
             </div>
           );
         }}

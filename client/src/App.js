@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./components/Landing/Landing";
-import Live from "./components/Live/Live";
+import Projects from "./components/Projects/Projects";
 import Repos from "./components/Repos/Repos";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -40,7 +40,7 @@ class App extends Component {
           {/* About */}
           <About />
           {/* Live Apps */}
-          <Live />
+          <Projects />
           {/* Repos */}
           <Repos />
           {/* Contact */}

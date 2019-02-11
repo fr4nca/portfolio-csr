@@ -50,13 +50,13 @@ export default class Navbar extends Component {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="live"
+                to="projects"
                 spy={true}
                 smooth={true}
                 offset={-this.state.navHeight}
                 duration={750}
               >
-                Live Projects
+                Projects
               </Link>
             </li>
             <li className="nav-item">

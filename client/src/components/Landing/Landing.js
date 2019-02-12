@@ -54,6 +54,7 @@ export default class Landing extends Component {
               duration={750}
               offset={-this.props.navHeight}
             >
+              <span className="read">Leia mais</span>
               <i className="fas fa-arrow-down fa-3x" />
             </Link>
           </div>

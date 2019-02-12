@@ -23,7 +23,6 @@
 }
 
 #landing .landing-content .links {
-  margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,5 +35,36 @@
 
 #landing .landing-content .arrow {
   margin-bottom: 4rem;
+  margin-top: -4rem;
   cursor: pointer;
+  transition: all 1s ease;
+}
+
+#landing .landing-content .arrow i {
+  animation: animateArrow 1s ease infinite;
+  display: block;
+}
+
+#landing .landing-content .arrow .read {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #landing .landing-content .arrow {
+    margin-bottom: 3rem;
+    margin-top: -3rem;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  #landing .landing-content .arrow .read {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+@keyframes animateArrow {
+  50% {
+    transform: scale(1.3);
+  }
 }

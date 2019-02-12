@@ -24,8 +24,13 @@ a {
   color: #fff;
 }
 
+.lead {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
 .l-heading {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
@@ -67,11 +72,6 @@ a {
 
 .text-center {
   text-align: center;
-}
-
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
 }
 
 .logo {

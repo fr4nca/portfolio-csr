@@ -63,6 +63,7 @@
     font-size: 1.2rem;
   }
 }
+
 @keyframes animateArrow {
   50% {
     transform: scale(1.3);

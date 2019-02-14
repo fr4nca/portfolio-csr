@@ -103,18 +103,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  #navbar {
-    flex-direction: column;
-  }
-
-  #navbar .nav {
-    padding: 0.25rem;
-  }
-
-  .logo {
-    margin-bottom: 0.25rem;
-  }
-
   .l-heading {
     font-size: 3rem;
     margin-top: 3rem;

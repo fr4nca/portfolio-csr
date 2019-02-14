@@ -34,56 +34,60 @@ export default class Navbar extends Component {
               Victor França
             </Link>
           </h1>
-          <ul className="nav">
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-this.state.navHeight}
-                duration={750}
-              >
-                Me
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-this.state.navHeight}
-                duration={750}
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="repos"
-                spy={true}
-                smooth={true}
-                offset={-this.state.navHeight}
-                duration={750}
-              >
-                Repos
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-this.state.navHeight}
-                duration={750}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <i id="menu-arrow" className="fas fa-bars fa-2x" />
+          <input type="checkbox" id="menu-button" />
+          <div className="menu-wrapper">
+            <ul className="nav">
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-this.state.navHeight}
+                  duration={750}
+                >
+                  Me
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-this.state.navHeight}
+                  duration={750}
+                >
+                  Projects
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  to="repos"
+                  spy={true}
+                  smooth={true}
+                  offset={-this.state.navHeight}
+                  duration={750}
+                >
+                  Repos
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-this.state.navHeight}
+                  duration={750}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     );

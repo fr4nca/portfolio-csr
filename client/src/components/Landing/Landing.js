@@ -55,7 +55,7 @@ export default class Landing extends Component {
               offset={-this.props.navHeight}
             >
               <span className="read">Leia mais</span>
-              <i className="fas fa-arrow-down fa-3x" />
+              <i className="fas fa-angle-double-down fa-3x" />
             </Link>
           </div>
         </div>

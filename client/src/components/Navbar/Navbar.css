@@ -14,7 +14,8 @@
   border: none;
 }
 
-#navbar .nav-wrapper #menu-button {
+#navbar #menu-button,
+#navbar #menu-icon {
   display: none;
 }
 
@@ -41,7 +42,12 @@
     flex-direction: column;
   }
 
+  #navbar .menu-wrapper {
+    margin-top: 1rem;
+  }
+
   #navbar #menu-button {
+    display: inline;
     position: absolute;
     top: 0;
     right: 0;
@@ -51,11 +57,8 @@
     height: 50px;
   }
 
-  #navbar .menu-wrapper {
-    margin-top: 1rem;
-  }
-
-  #navbar #menu-arrow {
+  #navbar #menu-icon {
+    display: inline;
     position: absolute;
     top: 0%;
     right: 0%;

@@ -9,7 +9,8 @@ export default class Navbar extends Component {
   }
 
   state = {
-    navHeight: ""
+    navHeight: "",
+    checked: false
   };
 
   componentDidMount() {
@@ -18,6 +19,21 @@ export default class Navbar extends Component {
       navHeight: this.nav.current.clientHeight
     });
   }
+
+  onChange = () => {
+    this.setState({
+      ...this.state,
+      checked: !this.state.checked
+    });
+  };
+
+  handleClick = () => {
+    if (this.state.checked)
+      this.setState({
+        ...this.state,
+        checked: false
+      });
+  };
 
   render() {
     return (
@@ -34,8 +50,13 @@ export default class Navbar extends Component {
               Victor França
             </Link>
           </h1>
-          <i id="menu-arrow" className="fas fa-bars fa-2x" />
-          <input type="checkbox" id="menu-button" />
+          <i id="menu-icon" className="fas fa-bars fa-2x" />
+          <input
+            type="checkbox"
+            id="menu-button"
+            checked={this.state.checked}
+            onChange={this.onChange}
+          />
           <div className="menu-wrapper">
             <ul className="nav">
               <li className="nav-item">
@@ -46,6 +67,7 @@ export default class Navbar extends Component {
                   smooth={true}
                   offset={-this.state.navHeight}
                   duration={750}
+                  onClick={this.handleClick}
                 >
                   Me
                 </Link>
@@ -58,6 +80,7 @@ export default class Navbar extends Component {
                   smooth={true}
                   offset={-this.state.navHeight}
                   duration={750}
+                  onClick={this.handleClick}
                 >
                   Projects
                 </Link>
@@ -70,6 +93,7 @@ export default class Navbar extends Component {
                   smooth={true}
                   offset={-this.state.navHeight}
                   duration={750}
+                  onClick={this.handleClick}
                 >
                   Repos
                 </Link>
@@ -82,6 +106,7 @@ export default class Navbar extends Component {
                   smooth={true}
                   offset={-this.state.navHeight}
                   duration={750}
+                  onClick={this.handleClick}
                 >
                   Contact
                 </Link>

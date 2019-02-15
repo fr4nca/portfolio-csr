@@ -30,10 +30,17 @@
   padding: 0.75rem;
   margin: 0 0.25rem;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-#navbar .nav .nav-item a:hover,
-#navbar .nav .nav-item > .active {
+#navbar .menu-wrapper .nav .nav-item a:hover {
+  background: var(--color-hover);
+}
+
+#navbar .menu-wrapper .nav .nav-item > .active {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
   border-bottom: 1px solid #fff;
 }
 
@@ -47,7 +54,7 @@
   }
 
   #navbar #menu-button {
-    display: inline;
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
@@ -58,7 +65,7 @@
   }
 
   #navbar #menu-icon {
-    display: inline;
+    display: block;
     position: absolute;
     top: 0%;
     right: 0%;
@@ -68,9 +75,5 @@
 
   #navbar #menu-button:not(:checked) + .menu-wrapper {
     display: none;
-  }
-
-  #navbar .nav-wrapper #menu-button {
-    display: inline;
   }
 }

@@ -2,6 +2,9 @@ import React, { Component } from "react";
 
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
+import RepoItem from "./RepoItem";
+
+import "./Repos.css";
 
 const query = gql`
   {
@@ -40,10 +43,10 @@ export default class Repos extends Component {
           const { edges } = data.viewer.repositories;
 
           return (
-            <div id="repos">
-              <div className="container">
-                {edges.map(edge => (
-                  <h1 key={edge.node.id}>{edge.node.name}</h1>
+            <div id="repos" className="bg-light p-2">
+              <div className="repo-grid">
+                {edges.map(({ node: repo }) => (
+                  <RepoItem key={repo.id} {...repo} />
                 ))}
               </div>
             </div>

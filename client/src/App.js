@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import "./style.css";
-import Navbar from "./components/Navbar/Navbar";
-import Landing from "./components/Landing/Landing";
-import Projects from "./components/Projects/Projects";
-import Repos from "./components/Repos/Repos";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import Navbar from "./pages/Navbar/Navbar";
+import Landing from "./pages/Landing/Landing";
+import Contact from "./pages/Contact/Contact";
+import Footer from "./pages/Footer/Footer";
+import About from "./pages/About/About";
+
+import Projects from "./pages/Projects/Projects";
+import Repos from "./pages/Repos/Repos";
 
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
-import About from "./components/About/About";
 
 const client = new ApolloClient({
   uri: "https://api.github.com/graphql",

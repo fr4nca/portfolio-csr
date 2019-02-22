@@ -19,6 +19,12 @@ body {
   line-height: 1.2;
 }
 
+.section-heading {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
 /* Utilities */
 .container {
   margin: auto;

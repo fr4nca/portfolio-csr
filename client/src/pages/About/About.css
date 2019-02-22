@@ -1,0 +1,7 @@
+#about .skills-list {
+  margin-top: 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+}

@@ -5,3 +5,13 @@
   justify-content: space-evenly;
   font-size: 1.4rem;
 }
+
+#about .skills-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+#about .skills-list i {
+  display: block;
+  margin: 0.5rem auto;
+}

@@ -9,7 +9,7 @@ import "./Repos.css";
 const query = gql`
   {
     viewer {
-      repositories(first: 8, orderBy: { direction: DESC, field: CREATED_AT }) {
+      repositories(first: 9, orderBy: { direction: DESC, field: CREATED_AT }) {
         edges {
           node {
             id
@@ -56,7 +56,7 @@ export default class Repos extends Component {
                     style={{ color: "black" }}
                     href="https://github.com/fr4nca?tab=repositories"
                   >
-                    Veja mais <i class="fas fa-external-link-alt" />
+                    Veja mais <i className="fas fa-external-link-alt" />
                   </a>
                 </span>
               </div>

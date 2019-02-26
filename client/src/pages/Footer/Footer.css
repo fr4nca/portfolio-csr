@@ -7,8 +7,7 @@
 }
 
 #footer .nav .nav-item {
-  padding: 0 6rem;
-  margin: 0.2rem 0;
+  padding: 0 5rem;
   border-right: #f4f4f4 dotted 1px;
 }
 
@@ -28,4 +27,17 @@
 #main-footer .links li {
   margin: 0 2rem;
   list-style: none;
+}
+@media (max-width: 768px) {
+  #footer {
+    display: none;
+  }
+
+  #main-footer .links {
+    font-size: 0.7rem;
+  }
+
+  #main-footer .links li {
+    margin: 0 1.4rem;
+  }
 }

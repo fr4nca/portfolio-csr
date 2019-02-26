@@ -151,16 +151,4 @@ a {
   .lead {
     font-size: 1.3rem;
   }
-
-  #footer {
-    display: none;
-  }
-
-  #main-footer .links {
-    font-size: 0.7rem;
-  }
-
-  #main-footer .links li {
-    margin: 0 1.4rem;
-  }
 }

@@ -8,9 +8,18 @@ export default class About extends Component {
         <div className="container">
           <h2 className="section-heading">Skills</h2>
           <ul className="skills-list">
-            <li>React</li>
-            <li>Express</li>
-            <li>Python</li>
+            <li>
+              <i className="fab fa-react fa-2x" /> React
+            </li>
+            <li>
+              <i className="fab fa-angular fa-2x" /> Angular
+            </li>
+            <li>
+              <i className="fab fa-node-js fa-2x" /> Node
+            </li>
+            <li>
+              <i className="fab fa-python fa-2x" /> Python
+            </li>
           </ul>
         </div>
       </div>

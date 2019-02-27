@@ -10,9 +10,10 @@ export default class About extends Component {
             <h2 className="section-heading">About me</h2>
             <hr />
             <p className="me">
-              My name is Victor Almeida França, I'm a fullstack WEB developer,
-              mostly focusing on the backend side. My main stack involves a lot
-              of Javascript, creating RESTfull and GraphQL APIs with Express in
+              My name is Victor Almeida França, currently I'm finishing my
+              Computer Science degree and I'm a fullstack WEB developer, mostly
+              focusing on the backend side. My main stack involves a lot of
+              Javascript, creating RESTfull and GraphQL APIs with Express in
               NodeJS and building frontend applications with React and Angular.
               I have a little bit of experience with Python in WEB development
               too, using Flask to create APIs.

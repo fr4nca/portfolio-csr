@@ -11,8 +11,8 @@ RUN npm install
 
 COPY . .
 
-RUN cd client; npm install; npm run build
+RUN cd client; yarn; yarn build
 
 EXPOSE 5000
 
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
